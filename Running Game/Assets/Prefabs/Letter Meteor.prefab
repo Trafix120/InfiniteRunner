@@ -169,7 +169,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1679445563450532}
-  m_Text: K
+  m_Text: O
   m_OffsetZ: -3.46
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -196,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.075
   move: 1
+  letter: 
 --- !u!212 &212158060229398776
 SpriteRenderer:
   m_ObjectHideFlags: 1

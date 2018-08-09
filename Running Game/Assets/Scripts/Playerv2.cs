@@ -91,8 +91,8 @@ public class Playerv2 : MonoBehaviour {
             currentJump = 0;
         }
 
-  
 
+        
     }
 
     private void PhysicallyMoving()

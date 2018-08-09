@@ -6,7 +6,16 @@ public class EndDestroyer : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(collision.gameObject);
+        if (collision.gameObject.GetComponent<LetterMeteor>() == null)
+        {
+            Destroy(collision.gameObject);
+        }
+        else
+        {
+            SpawnerManager spawnerManager = GameObject.FindGameObjectWithTag("Spawner").GetComponent<SpawnerManager>();
+            spawnerManager.letterMeteors.Remove(collision.transform);
+            Destroy(collision.gameObject);
+        }
 
     }
 

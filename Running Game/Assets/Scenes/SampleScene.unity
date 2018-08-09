@@ -252,8 +252,8 @@ GameObject:
   - component: {fileID: 906134861}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_TagString: Spawner
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -340,7 +340,8 @@ MonoBehaviour:
     spawnerScript: {fileID: 0}
   - activateTime: 2
     spawnerScript: {fileID: 0}
-  currentTime: 0
+  viableLetters: []
+  letterMeteors: []
 --- !u!4 &1042247553 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4789851902829030, guid: 4c458ac5c04b8344dabd381e83141061,
@@ -408,7 +409,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!114 &1185408817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,7 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  move: 0
+  move: 1
 --- !u!4 &1295726989
 Transform:
   m_ObjectHideFlags: 0
@@ -667,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 1393853887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.68, y: -0.04, z: -0.14257812}
-  m_LocalScale: {x: 1, y: 11.830849, z: 1}
+  m_LocalScale: {x: 1, y: 156.90662, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
