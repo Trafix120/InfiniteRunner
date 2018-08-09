@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class EndDestroyer : MonoBehaviour {
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(transform.position.x < -13)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(collision.gameObject);
+
     }
 
 
