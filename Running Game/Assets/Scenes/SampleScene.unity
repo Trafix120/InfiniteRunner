@@ -298,7 +298,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -441,7 +441,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -455,17 +455,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185408814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19410ee40b90739448a80e2d9e7f95a5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6bfec4a4bdbf6c4297ade5863b3c6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.445
-  jumpSpeed: 20
-  jumpProg: 0
-  jumpMax: 0.25
-  afterFallJumpAccel: 0.5
-  projectile: {fileID: 4448852335543294, guid: 720bc18662d45c34aaeee019573de021, type: 2}
-  projectileFol: {fileID: 1603915136}
-  fastFallSpeed: 1
+  speed: 1
+  jumpIncrease: 5.03
+  jumpTimeMax: 0.35
+  maxJumps: 3
+  gravitySpeed: 0.1
+  downSpeed: 0.4
 --- !u!4 &1185408818
 Transform:
   m_ObjectHideFlags: 0
@@ -520,8 +518,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 341303659}
-  - {fileID: 746065721}
   - {fileID: 1042247553}
+  - {fileID: 746065721}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -740,7 +738,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4789851902829030, guid: 4c458ac5c04b8344dabd381e83141061, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.96
+      value: 1.9599999
       objectReference: {fileID: 0}
     - target: {fileID: 4789851902829030, guid: 4c458ac5c04b8344dabd381e83141061, type: 2}
       propertyPath: m_LocalPosition.z
@@ -764,7 +762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4789851902829030, guid: 4c458ac5c04b8344dabd381e83141061, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1914956733090744, guid: 4c458ac5c04b8344dabd381e83141061, type: 2}
       propertyPath: m_TagString
@@ -822,7 +820,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4789851902829030, guid: 4c458ac5c04b8344dabd381e83141061, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1914956733090744, guid: 4c458ac5c04b8344dabd381e83141061, type: 2}
       propertyPath: m_TagString
