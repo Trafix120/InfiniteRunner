@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LetterMeteorSpawner : BaseSpawner {
     public string[] viableLetters;          // Letters that are on the right side of the keyboard
-
+    public KeyCode[] keyCodes;
     protected override void Start()
     {
         base.Start();

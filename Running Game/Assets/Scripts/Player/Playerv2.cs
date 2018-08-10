@@ -32,13 +32,12 @@ public class Playerv2 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+       
+    }
 	
 	// Update is called once per frame
 	void Update () {
         horInput = Vector3.right * Input.GetAxisRaw("Horizontal");
-
         // || Jumping Inputs ||
 
         // Getting the target of the lerp jump & getting the logic for +1 jumps in the air

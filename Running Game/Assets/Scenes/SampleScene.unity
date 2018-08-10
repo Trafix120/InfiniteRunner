@@ -318,12 +318,10 @@ MonoBehaviour:
   - 9
   - i
   - k
-  - ','
-  - 0
   - o
   - l
-  - .
   - p
+  keyCodes: 3700000079000000680000006e00000038000000750000006a0000006d00000039000000690000006b0000006f0000006c00000070000000
 --- !u!114 &906134862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +339,7 @@ MonoBehaviour:
   - activateTime: 2
     spawnerScript: {fileID: 0}
   viableLetters: []
+  keycodesOfLetters: 
   letterMeteors: []
 --- !u!4 &1042247553 stripped
 Transform:
@@ -356,6 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1185408818}
   - component: {fileID: 1185408817}
+  - component: {fileID: 1185408819}
   - component: {fileID: 1185408816}
   - component: {fileID: 1185408815}
   m_Layer: 0
@@ -441,6 +441,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185408819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185408814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f363291959a274d9655cbd45dc227b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerManager: {fileID: 0}
 --- !u!1 &1295726987
 GameObject:
   m_ObjectHideFlags: 0

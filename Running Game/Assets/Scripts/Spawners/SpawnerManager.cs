@@ -10,6 +10,7 @@ public class SpawnerManager : MonoBehaviour {
 
     // Info for the player script to use
     public string[] viableLetters;
+    public KeyCode[] keycodesOfLetters;
     public List<Transform> letterMeteors = new List<Transform>();
 
 	// Use this for initialization
@@ -25,7 +26,7 @@ public class SpawnerManager : MonoBehaviour {
 
         // Initating spawner information
         viableLetters = GetComponent<LetterMeteorSpawner>().viableLetters;
-        
+        keycodesOfLetters = GetComponent<LetterMeteorSpawner>().keyCodes;
 
 	}
 	
